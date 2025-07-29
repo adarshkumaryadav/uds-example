@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: uds-demo
+spec:
+  volumes:
+    - name: socket-dir
+      emptyDir: {}
+  containers:
+    - name: uds-server
+      image: your-dockerhub/uds-server:latest
+      volumeMounts:
+        - name: socket-dir
+          mountPath: /csi
+    - name: uds-client
+      image: your-dockerhub/uds-client:latest
+      volumeMounts:
+        - name: socket-dir
+          mountPath: /csi

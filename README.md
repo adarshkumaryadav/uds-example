@@ -50,6 +50,7 @@ A **Unix Domain Socket (UDS)** is an inter-process communication (IPC) mechanism
 
 ---
 
+```
 ## 📦 Project Structure
 
 
@@ -62,7 +63,7 @@ uds-example/
 │   └── Dockerfile
 └── pod.yaml            # Kubernetes Pod with 2 containers & shared emptyDir
 
-
+```
 
 ---
 

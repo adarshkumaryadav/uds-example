@@ -3,7 +3,7 @@ Unix domain socket
 
 ---
 
-```markdown
+
 # 🧩 Unix Domain Socket Communication in Kubernetes using Golang
 
 This project demonstrates how **two containers inside a single Kubernetes Pod** can communicate using a **Unix Domain Socket (UDS)** — a concept heavily used in real-world systems like **Kubernetes CSI drivers**, **Docker**, and **container sidecars**.
@@ -52,7 +52,6 @@ A **Unix Domain Socket (UDS)** is an inter-process communication (IPC) mechanism
 
 ## 📦 Project Structure
 
-```
 
 uds-example/
 ├── server/
@@ -63,7 +62,7 @@ uds-example/
 │   └── Dockerfile
 └── pod.yaml            # Kubernetes Pod with 2 containers & shared emptyDir
 
-````
+
 
 ---
 
